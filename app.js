@@ -25,10 +25,10 @@ class GroceryListItem extends React.Component {
     };
 
     return (
-      <li style={style}
-        onClick={this.onListItemClick.bind(this)}
-        onMouseEnter={this.onListItemMouseEnter.bind(this)}
-        onMouseLeave={this.onListItemMouseLeave.bind(this)}>
+      <li style = {style}
+        onClick = {() => this.onListItemClick()}
+        onMouseEnter = {() => this.onListItemMouseEnter()}
+        onMouseLeave = {() => this.onListItemMouseLeave()}>
         {this.props.item}
       </li>
     );
